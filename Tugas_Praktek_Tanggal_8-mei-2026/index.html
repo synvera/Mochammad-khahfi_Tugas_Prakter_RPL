@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!-- ini ngasih tau browser kalau file ini pakai HTML versi terbaru (HTML5) -->
+<!-- fungsinya untuk memastikan situs web tampil konsisten dan benar di berbagai browser sesuai standar HTML5, serta mencegah kesalahan tampilan (rendering). -->
 
 <html lang="id"> 
-<!-- tag pembungkus seluruh halaman HTML, lang="id" berarti bahasa utama indonesia -->
+<!-- lang="id" berarti bahasa utama indonesia -->
 
 <head>
-  <!-- bagian head berisi konfigurasi halaman, tidak tampil langsung di website -->
+  <!-- bagian head berisi konfigurasi halaman, tidak tampil didalam website -->
 
   <meta charset="UTF-8">
-  <!-- menentukan encoding karakter supaya semua teks terbaca normal -->
+  <!-- agar semua karakter dan teks terbaca normal diweb -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- mengatur tampilan supaya responsif di hp dan berbagai ukuran layar -->
@@ -18,33 +18,31 @@
 
 <style>
   /* 
-    tag style digunakan untuk menuliskan CSS langsung di HTML
-    berfungsi untuk mengatur tampilan seperti warna, font, dan layout
-  */
+    tag style digunakan untuk menuliskan CSS langsung di HTML (inline) berfungsi untuk mengatur tampilan website */
 
   body {
     font-family: Arial, sans-serif; 
-    /* font utama halaman */
+    /* font untuk semua halaman didalam body */
 
     margin: 0;  
-    /* menghilangkan margin default browser */
+    /* menghilangkan margin default */
 
     background: #f4f4f4; 
-    /* warna latar belakang halaman */
+    /* warna latar belakang body */
   }
 
   header {
     background: #333; 
-    /* warna background header */
+    /* untuk warna background header */
 
     color: white; 
-    /* warna teks */
+    /* untuk warna teks didalam header */
 
     padding: 15px; 
     /* jarak dalam header */
 
     text-align: center; 
-    /* posisi teks di tengah */
+    /* buat posisi teks di tengah-tengah */
   }
 
   nav {
@@ -55,56 +53,56 @@
     /* jarak dalam navbar */
 
     text-align: center; 
-    /* posisi menu di tengah */
+    /* posisi isi navbar berada di tengah */
   }
 
   nav a {
     color: white; 
-    /* warna teks link */
+    /* untuk warna teks link */
 
     margin: 0 10px; 
     /* jarak antar link */
 
     text-decoration: none; 
-    /* menghilangkan garis bawah */
+    /* menghilangkan garis bawah di tag a */
   }
 
   nav a:hover {
     text-decoration: underline; 
-    /* efek saat mouse diarahkan */
+    /* efek saat mouse diarahkan ke tag a */
   }
 
   main {
     padding: 20px; 
-    /* jarak isi konten utama */
+    /* jarak isi dari tag main */
   }
 
   section {
     margin-bottom: 20px; 
-    /* jarak antar section */
+    /* jarak bawah section */
 
     background: white; 
-    /* background section */
+    /* untuk background section */
 
     padding: 15px; 
-    /* jarak isi section */
+    /* jarak dalam section */
 
     border-radius: 8px; 
-    /* sudut melengkung */
+    /* sudut melengkung dari section */
 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-    /* bayangan ringan */
+    /* bayangan dibelakang section */
   }
 
   footer {
     background: #333; 
-    /* warna background footer */
+    /* warna background dari footer */
 
     color: white; 
-    /* warna teks */
+    /* warna teks didalam footer */
 
     text-align: center; 
-    /* posisi teks */
+    /* posisi teks didalam footer */
 
     padding: 10px; 
     /* jarak dalam footer */
@@ -116,130 +114,130 @@
     /* ditempel di bagian bawah */
 
     width: 100%; 
-    /* lebar penuh */
+    /* fungsinya untuk layar full horizontal */
   }
 
   button {
     padding: 10px 15px; 
-    /* ukuran tombol */
+    /* untuk ukuran tombol */
 
     background: #28a745; 
     /* warna tombol */
 
     color: white; 
-    /* warna teks */
+    /* warna teks didalam button */
 
     border: none; 
-    /* tanpa border */
+    /* tidak ada border */
 
     border-radius: 5px; 
-    /* sudut membulat */
+    /* untuk membengkokkan dari setiap sisi button */
 
     cursor: pointer; 
-    /* kursor berubah jadi pointer saat diarahkan */
+    /* kursor berubah jadi pointer saat diarahkan diatas button */
   }
 </style>
 </head>
 
 <body>
-<!-- body adalah isi utama website, semua yang terlihat user ada di sini -->
+<!-- body adalah isi dalem website, semua yang terlihat user ada di sini -->
 
 <header>
-  <!-- header adalah bagian atas website, biasanya berisi judul atau deskripsi -->
+  <!-- header untuk bagian atas website -->
 
   <h1>Website Satu File</h1>
-  <!-- h1 adalah heading utama (judul terbesar dan paling penting) -->
+  <!-- h1 digunakan untuk menampilkan tulisan besar -->
 
   <p>HTML + CSS + JavaScript dalam satu file</p>
-  <!-- p digunakan untuk menampilkan teks/paragraf -->
+  <!-- p digunakan untuk menampilkan paragraf -->
 </header>
 
 <nav>
-  <!-- nav digunakan untuk menu navigasi antar bagian halaman -->
+  <!-- nav untuk menu navigasi yang bisa untuk pindah halaman atau page -->
 
   <a href="#home">Home</a>
-  <!-- a (anchor) adalah link, href mengarah ke id tertentu -->
+  <!-- a href berisi link untuk mengarahkan ke id tertuju -->
 
   <a href="#about">About</a>
-  <!-- link ke section about -->
+  <!-- sama seperti yang diatas -->
 
   <a href="#contact">Contact</a>
-  <!-- link ke section contact -->
+  <!-- sama seperti yang diatas -->
 </nav>
 
 <main>
-  <!-- main adalah area konten utama halaman -->
+  <!-- ini berisi sebuah beberapa konten setelah header -->
 
   <section id="home">
-    <!-- section digunakan untuk membagi konten menjadi beberapa bagian -->
+    <!-- disini section digunakan untuk membagi konten menjadi beberapa bagian, Disini section untuk home -->
 
     <h2>Home</h2>
-    <!-- h2 adalah sub judul (di bawah h1) -->
+    <!-- h2 adalah tulisan besar dibawah h1 ( jadi ga terlalu besar seperti h1 ) -->
 
     <p>Ini adalah halaman utama website sederhana.</p>
 
     <button onclick="tampilkanPesan()">Klik Saya</button>
-    <!-- button adalah tombol, onclick untuk menjalankan fungsi javascript saat diklik -->
+    <!-- tombol, dengan function onclick yang berfungsi untuk menjalankan fungsi javascript saat diklik -->
   </section>
 
   <section id="about">
-    <!-- section untuk bagian tentang -->
+    <!-- disini section digunakan untuk membagi konten menjadi beberapa bagian, Disini section untuk tentang -->
 
     <h2>About</h2>
     <p>Website ini dibuat dalam satu file menggunakan HTML, CSS, dan JavaScript.</p>
   </section>
 
   <section id="contact">
-    <!-- section untuk bagian kontak -->
+    <!-- disini section digunakan untuk membagi konten menjadi beberapa bagian, Disini section untuk kontak -->
 
     <h2>Contact</h2>
 
     <form onsubmit="kirimForm(event)">
-      <!-- form digunakan untuk input data user -->
+      <!-- form digunakan untuk input data dari pengguna atau user -->
 
       <label>Nama:</label><br>
-      <!-- label adalah teks penjelas untuk input -->
+      <!-- ini untuk teks penjelas diatas input -->
 
       <input type="text" id="nama" required><br><br>
-      <!-- input text untuk isi nama, required berarti wajib diisi -->
+      <!-- input text untuk isi nama, yang wajid diisi karena ada required -->
 
       <label>Email:</label><br>
-      <!-- label untuk email -->
+      <!-- ini untuk teks penjelas diatas input -->
 
       <input type="email" required><br><br>
-      <!-- input email untuk validasi format email -->
+      <!-- input email untuk format email -->
 
       <button type="submit">Kirim</button>
-      <!-- tombol submit untuk mengirim data form -->
+      <!-- untuk mengirim data dari form yang diisi oleh pengguna -->
     </form>
   </section>
 </main>
 
 <footer>
-  <!-- footer adalah bagian bawah website, biasanya isi copyright -->
+  <!-- footer adalah bagian bawah website -->
 
   <p>&copy; 2026 Website Sederhana</p>
 </footer>
 
 <script>
-  // tag script digunakan untuk menulis javascript agar website bisa interaktif
+  // tag script digunakan untuk menulis javascript
 
   function tampilkanPesan() {
-    // fungsi ini dijalankan saat tombol diklik
+    // fungsi ini dijalankan saat tombol <button onclick="tampilkanPesan()">Klik Saya</button> diklik
     alert("Halo! Ini JavaScript dalam satu file.");
   }
 
   function kirimForm(event) {
-    // fungsi ini dijalankan saat form dikirim
+    // fungsi ini berjalan saat form dikirim
 
     event.preventDefault();
-    // mencegah reload halaman
+    // mencegah halaman reload
 
     const nama = document.getElementById("nama").value;
-    // mengambil nilai dari input nama
+    // tujuannya mengambil value "nama" yang ada dihtml untuk masuk ke const nama
 
     alert("Terima kasih, " + nama + "! Pesan Anda terkirim.");
-    // menampilkan pesan ke user
+    // menampilkan alert yang ada di atas yang berisi pesan
   }
 </script>
 
